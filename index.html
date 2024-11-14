@@ -167,11 +167,13 @@ function processPayment(paymentData) {
   // show returned data in developer console for debugging
     console.log(paymentData); // @todo pass payment token to your gateway to process payment
     paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+  //prompt ("Wallet Payload", JSON.stringify(paymentToken));
 }
 
-        prompt ("Wallet Payload", JSON.stringify(paymentToken));
+    
 
 </script>
 <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+
   </body>
 </html>
